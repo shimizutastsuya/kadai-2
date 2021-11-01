@@ -1,0 +1,16 @@
+<body>
+  <div class="show_container">
+    <div class="show_title">
+      <strong>Title:</strong>
+      <%= @book.title %>
+    </div>
+    <div class="show_body">
+      <strong>Body:</strong>
+      <%= @book.body%>
+    </div>
+
+    <%= link_to 'Edit', edit_book_path(@book.id),class: 'btn btn-block btn-white'  %>
+    |
+    <%= link_to 'Back', books_path,class: 'btns btn-block btn-white'  %>
+  </div>
+</body>
